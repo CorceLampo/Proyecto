@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: sans-serif
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ededed;
+    align-items: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    margin-right: 15px;
+    width: 65px;
+    margin-left: 100px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 15px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.contenido {
+    display: flex;
+    background-color: blanchedalmond;
+    height: 700px;
+}
+
+.bienvenida {
+    padding: 20px;
+    background-color: hsl(0, 0%, 81%);
+    height: 25px; 
+    text-align: center;
+    font-size:small;
+   
+}
+.sedes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: rgb(235, 197, 162);
+    height: 290px;    
+}
+.sedes img {
+    width: 40%;
+    margin-left: 60px;
+}
+
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    
+    nav a {
+        padding: 5px;
+    }
+
+    .logo img {
+        margin-left: 50px;
+    }
+
+    .bienvenida {
+        height: 90px;
+    }
+}
+
