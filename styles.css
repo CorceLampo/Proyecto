@@ -1,15 +1,22 @@
-body {
-    margin: 0;
-    font-family: sans-serif
-    
-}
-
 header {
     display: flex;
     justify-content: space-between;
     background-color: #ededed;
     align-items: center;
     padding: 10px;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif
+    
+}
+
+.encabezado{
+    display: flex;    
 }
 
 a {
@@ -24,13 +31,13 @@ a {
 
 .logo img{
     margin-right: 15px;
-    width: 65px;
+    width: 50px;
     margin-left: 100px;
 }
 
 nav a{
     font-weight: 600;
-    padding-right: 15px;
+    padding-right: 40px;
 }
 
 nav a:hover {
@@ -41,7 +48,8 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     background-color: blanchedalmond;
-    height: 1820px;
+    height: 2050px;
+    margin-top: 65px;
 }
 
 
@@ -51,16 +59,21 @@ nav a:hover {
     justify-content: center;
     padding: 20px;
     background-color: hsl(0, 0%, 81%);
-    height: 900px; 
+    height: 525px; 
     text-align: center;
 }
+
 .primarytext{
     background-color: rgba(255, 252, 247, 0.541);
     margin-bottom: 40px;
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color:bisque;
     width: 40%;
     height: 320px;
@@ -69,7 +82,7 @@ nav a:hover {
 }
 
 .text img {
-    width: 63%;
+    width: 70%;
 }
 
 
@@ -83,6 +96,7 @@ nav a:hover {
     text-align: center;
     background-color: hsl(0, 0%, 81%);
 }
+
 .text2 {
     background-color: hsl(0, 36%, 95%);
     width: 40%;
@@ -90,10 +104,10 @@ nav a:hover {
     margin: 20px;
 
 }
+
 .primarytext2 {
     width: 1000px;
 }
-
 
 .reseñas {
     margin-top: 40px;
@@ -110,17 +124,60 @@ nav a:hover {
     width: 1000px;
 }
 
-
-
 footer {
 height: 200px;
 }
 
+.nav_label, .nav_input {
+    display: none;
+}
 
+@media (max-width: 900px){
 
-@media (max-width: 700px){
     header{
         flex-direction: column;
+    }
+    
+    .primarymenu {
+        display: flex;
+    }
+
+    .menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: antiquewhite;
+        width: 100%;
+        left: 0px;
+        display: flex;
+        justify-content: right;
+        clip-path: inset(0 0 0 100%) ;
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-right: 20px;
+    }
+
+    .nav_input:checked + .menu {
+        clip-path: inset(0 0 0 60%) ;
+    }
+
+    input[type="checkbox"] {
+        appearance: none ;
+    }
+
+    .nav_label {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .nav_label, .nav_input {
+        display: block;
+        cursor: pointer;
     }
     
     nav a {
@@ -128,8 +185,9 @@ height: 200px;
     }
 
     .logo img {
-        margin-left: 50px;
-    }
+
+        margin-left: -30px;
+        }
 
     .bienvenida {
         height: 900px;
@@ -140,22 +198,11 @@ height: 200px;
     }
 
     .contenido {
-        height: 2000px;
+        height: 3000px;
     }
     .text2 {
         height: 400px;
     }
-
-    .nav_label {
-        display: block;
-        cursor: pointer;
-    }
     
 }
 
-.nav_input:checked + .menu {
-    background: blue;
-}
-
-.nav_label, .nav_input {
-}
