@@ -97,15 +97,22 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+
 .servicios {
-    margin-top: 40px;
-    padding: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 40px;
+    padding: 40px;
     height: 620px; 
     text-align: center;
     background-color: hsl(0, 0%, 81%);
+}
+
+
+
+.info {
+    display: flex;
+    
 }
 
 .text2 {
@@ -120,7 +127,7 @@ nav a:hover {
 }
 
 .primarytext2 {
-    width: 1100px;
+    width: 900px;
 }
 
 .reseñas {
@@ -149,33 +156,40 @@ height: 200px;
 
 
 .slider{
-    background-color: rgb(227, 233, 233);
-    width: 400%;
-    height: 500px;
+    width: 250px;
+    height: 400px;
     overflow: hidden;
+    margin-left: 40%;
 }
+
+.precios_y_características{
+    display: flex;
+    background-color: antiquewhite;
+    width: 50%;
+}
+
 .slider ul{
     display: flex;
     padding: 0;
     width: 400%;
-    animation: slide 35s infinite alternate ease-in-out;
     transition: 1s;
+    animation: slide 35s infinite alternate ease-in-out;
 }
+
+
 
 .slider li {
     list-style: none;
     width: 100%;
-    margin-top: 40px;
-    margin-left: 80px;
 }
 
 .slider img{
-    width: 300px;
+    width: 250px;
 }
 
 @keyframes slide {
-    10% {margin-left: 0%;}
-    20% {margin-left: 0%;}
+    0% {margin-left: 0%}
+    20% {margin-left: 0%}
 
     25% {margin-left: -100%;}
     45% {margin-left: -100%;}
@@ -184,13 +198,13 @@ height: 200px;
     70% {margin-left: -200%;}
 
     75% {margin-left: -300%;}
-    95% {margin-left: -300%;}
-
-
+    100% {margin-left: -300%;}
 }
 
 
 @media (max-width: 900px){
+
+
 
     header{
         flex-direction: column;
@@ -262,5 +276,10 @@ height: 200px;
         height: 400px;
     }
     
+    .slider {
+        margin-left: 10%;
+
+    }
+
 }
 
