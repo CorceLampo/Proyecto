@@ -7,11 +7,12 @@ header {
     width: 100%;
     height: 60px;
     position: fixed;
+    z-index: 100;
 }
 
 body {
     margin: 0;
-    font-family: sans-serif
+    font-family: sans-serif;
     
 }
 
@@ -54,9 +55,6 @@ nav a:hover {
 
 
 .bienvenida {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 20px;
     background-color: hsl(0, 0%, 81%);
     height: 525px; 
@@ -85,7 +83,6 @@ nav a:hover {
     display: flex;
     justify-content: center;
     background-color: rgba(70, 112, 112, 0.568);
-    padding: 10px;
     border-radius: 15px;
 }
 
@@ -99,20 +96,20 @@ nav a:hover {
 
 
 .servicios {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 40px;
     padding: 40px;
-    height: 620px; 
+    height: 500px; 
     text-align: center;
     background-color: hsl(0, 0%, 81%);
 }
 
 
 
+
 .info {
-    display: flex;
-    
+    width: 100%;
+    height: 500px;
+
 }
 
 .text2 {
@@ -127,7 +124,7 @@ nav a:hover {
 }
 
 .primarytext2 {
-    width: 900px;
+    width: 100%;
 }
 
 .reseñas {
@@ -159,13 +156,15 @@ height: 200px;
     width: 250px;
     height: 400px;
     overflow: hidden;
-    margin-left: 40%;
+    position: absolute;
 }
 
-.precios_y_características{
-    display: flex;
+.precios{
     background-color: antiquewhite;
-    width: 50%;
+    width: 70%;
+    margin-left: 300px;
+    margin-top: 20px;
+    height: 400px;
 }
 
 .slider ul{
@@ -173,7 +172,7 @@ height: 200px;
     padding: 0;
     width: 400%;
     transition: 1s;
-    animation: slide 35s infinite alternate ease-in-out;
+    animation: slide 30s infinite alternate ease-in-out;
 }
 
 
@@ -202,9 +201,21 @@ height: 200px;
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 700px){
 
+    
+    .precios {
+        margin: 0;
+        margin-top: 40px;
+        height: 600px;
+        width: 350px;
+        font-size: x-large;
+    }
 
+    .slider {
+        
+        position: static;
+    }
 
     header{
         flex-direction: column;
@@ -262,11 +273,26 @@ height: 200px;
         }
 
     .bienvenida {
-        height: 900px;
+        height: 1350px;
     }
 
     .primarytext {
-        height: 200px;
+        height: 300px;
+    }
+
+    .alltext{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alltext img {
+        width: 300px;
+    }
+
+
+    .servicios {
+        height: 1200px;
     }
 
     .contenido {
