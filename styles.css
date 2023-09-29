@@ -25,6 +25,15 @@ a {
     color: black;
 }
 
+.aMenu {
+
+}
+
+.items img {
+    display: none;
+    margin-right: 10px;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -98,7 +107,7 @@ nav a:hover {
 .servicios {
     margin-top: 40px;
     padding: 40px;
-    height: 500px; 
+    height: 1100px; 
     text-align: center;
     background-color: hsl(0, 0%, 81%);
 }
@@ -109,7 +118,6 @@ nav a:hover {
 .info {
     width: 100%;
     height: 500px;
-
 }
 
 .text2 {
@@ -125,6 +133,7 @@ nav a:hover {
 
 .primarytext2 {
     width: 100%;
+    padding-bottom: 30px;
 }
 
 .reseñas {
@@ -150,7 +159,11 @@ height: 200px;
     display: none;
 }
 
-
+.info2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 .slider{
     width: 250px;
@@ -160,11 +173,21 @@ height: 200px;
 }
 
 .precios{
+    display: flex;
     background-color: antiquewhite;
     width: 70%;
     margin-left: 300px;
     margin-top: 20px;
-    height: 400px;
+    text-align: justify;
+}
+
+.precios2{
+    display: flex;
+    background-color: antiquewhite;
+    width: 70%;
+    margin-top: 20px;
+    text-align: justify;
+    margin-left: 50px;
 }
 
 .slider ul{
@@ -175,8 +198,6 @@ height: 200px;
     animation: slide 30s infinite alternate ease-in-out;
 }
 
-
-
 .slider li {
     list-style: none;
     width: 100%;
@@ -186,18 +207,44 @@ height: 200px;
     width: 250px;
 }
 
+.slider2{
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 50px;
+
+}
+
+.slider2 ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    transition: 1s;
+    animation: slide 30s infinite alternate ease-in-out;
+}
+
+.slider2 li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider2 img{
+    width: 250px;
+}
+
+
 @keyframes slide {
-    0% {margin-left: 0%}
-    20% {margin-left: 0%}
+    0% { margin-left: 0% }
+    20% { margin-left: 0% }
 
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
+    25% { margin-left: -100% }
+    45% { margin-left: -100% }
 
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
+    50% { margin-left: -200% }
+    70% { margin-left: -200% }
 
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
+    75% { margin-left: -300% }
+    100% { margin-left: -300% }
 }
 
 
@@ -207,9 +254,7 @@ height: 200px;
     .precios {
         margin: 0;
         margin-top: 40px;
-        height: 600px;
-        width: 350px;
-        font-size: x-large;
+        width: 100%;
     }
 
     .slider {
@@ -243,6 +288,11 @@ height: 200px;
         flex-direction: column;
         justify-content: space-evenly;
         margin-right: 20px;
+        align-items: center;
+    }
+
+    .items img {
+        display: block;
     }
 
     .nav_input:checked + .menu {
@@ -265,6 +315,8 @@ height: 200px;
     
     nav a {
         padding: 5px;
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .logo img {
@@ -291,20 +343,36 @@ height: 200px;
     }
 
 
+
+
     .servicios {
-        height: 1200px;
+        height: 2200px;
     }
 
     .contenido {
-        height: 3000px;
+        height: 5000px;
     }
     .text2 {
         height: 400px;
     }
     
     .slider {
-        margin-left: 10%;
+        margin-left: 15%;
+    }
 
+    .info2{
+        margin-top: 550px;
+    }
+
+    .slider2 {
+        position: absolute;
+        margin-left: 15%;
+    }
+
+    .precios2 {
+        margin: 0;
+        margin-top: 500px;
+        width: 100%;
     }
 
 }
