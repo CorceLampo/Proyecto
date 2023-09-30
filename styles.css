@@ -1,3 +1,12 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+.encabezado{
+    display: flex;    
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -10,28 +19,13 @@ header {
     z-index: 100;
 }
 
-body {
-    margin: 0;
-    font-family: sans-serif;
-    
-}
-
-.encabezado{
-    display: flex;    
-}
-
 a {
     text-decoration: none;
     color: black;
 }
 
-.aMenu {
-
-}
-
 .items img {
     display: none;
-    margin-right: 10px;
 }
 
 .logo {
@@ -40,9 +34,8 @@ a {
 }
 
 .logo img{
-    margin-right: 15px;
+    margin: auto 15px auto 100px;
     width: 50px;
-    margin-left: 100px;
 }
 
 nav a{
@@ -54,27 +47,38 @@ nav a:hover {
     color: white;
 }
 
+.nav_label, .nav_input {
+    display: none;
+    margin: 20px auto auto 20px;
+}
+
 .contenido {
     display: flex;
     flex-direction: column;
     background-color: blanchedalmond;
-    height: 2050px;
     margin-top: 65px;
 }
-
 
 .bienvenida {
     padding: 20px;
     background-color: hsl(0, 0%, 81%);
-    height: 525px; 
     text-align: center;
 }
 
 .primarytext{
+    display: flex;
+    flex-direction: column;
     background-color: rgba(255, 252, 247, 0.541);
-    margin-bottom: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: auto 50px auto 50px;
+    border-radius: 20px;
+}
+
+.alltext {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(70, 112, 112, 0.568);
+    border-radius: 15px;
 }
 
 .text {
@@ -88,15 +92,8 @@ nav a:hover {
     
 }
 
-.alltext {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(70, 112, 112, 0.568);
-    border-radius: 15px;
-}
-
 .text img {
-    width: 80%;
+    width: 100%;
 }
 
 .text:hover{
@@ -105,30 +102,12 @@ nav a:hover {
 
 
 .servicios {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 40px;
     padding: 40px;
-    height: 1100px; 
     text-align: center;
     background-color: hsl(0, 0%, 81%);
-}
-
-
-
-
-.info {
-    width: 100%;
-    height: 500px;
-}
-
-.text2 {
-    margin: 50px;
-    display: flex;
-
-}
-
-.text2 img{
-    width: 150px;
-    margin-left: 15px;
 }
 
 .primarytext2 {
@@ -136,33 +115,16 @@ nav a:hover {
     padding-bottom: 30px;
 }
 
-.reseñas {
-    margin-top: 40px;
-    padding: 40px;
+.info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    height: 620px; 
-    text-align: center;
-    background-color: hsl(0, 0%, 81%);
-}
-
-.primarytext3 {
-    width: 1000px;
-}
-
-footer {
-height: 200px;
-}
-
-.nav_label, .nav_input {
-    display: none;
 }
 
 .info2{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 .slider{
@@ -172,30 +134,12 @@ height: 200px;
     position: absolute;
 }
 
-.precios{
-    display: flex;
-    background-color: antiquewhite;
-    width: 70%;
-    margin-left: 300px;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.precios2{
-    display: flex;
-    background-color: antiquewhite;
-    width: 70%;
-    margin-top: 20px;
-    text-align: justify;
-    margin-left: 50px;
-}
-
 .slider ul{
     display: flex;
     padding: 0;
     width: 400%;
     transition: 1s;
-    animation: slide 30s infinite alternate ease-in-out;
+    animation: slide 50s infinite alternate ease-in-out;
 }
 
 .slider li {
@@ -207,12 +151,18 @@ height: 200px;
     width: 250px;
 }
 
+.precios{
+    display: flex;
+    background-color: antiquewhite;
+    width: 70%;
+    margin: 20px auto auto 300px;
+    text-align: justify;
+}
+
 .slider2{
     width: 250px;
     height: 400px;
     overflow: hidden;
-    margin-left: 50px;
-
 }
 
 .slider2 ul{
@@ -220,7 +170,7 @@ height: 200px;
     padding: 0;
     width: 400%;
     transition: 1s;
-    animation: slide 30s infinite alternate ease-in-out;
+    animation: slide 50s infinite alternate ease-in-out;
 }
 
 .slider2 li {
@@ -232,6 +182,13 @@ height: 200px;
     width: 250px;
 }
 
+.precios2{
+    display: flex;
+    background-color: antiquewhite;
+    width: 70%;
+    text-align: justify;
+    margin-right: 50px;
+}
 
 @keyframes slide {
     0% { margin-left: 0% }
@@ -258,8 +215,11 @@ height: 200px;
     }
 
     .slider {
-        
         position: static;
+    }
+
+    .info {
+        justify-content: center;
     }
 
     header{
@@ -296,16 +256,11 @@ height: 200px;
     }
 
     .nav_input:checked + .menu {
-        clip-path: inset(0 0 0 60%) ;
+        clip-path: inset(0 0 0 50%) ;
     }
 
     input[type="checkbox"] {
         appearance: none ;
-    }
-
-    .nav_label {
-        margin-left: 30px;
-        margin-top: 20px;
     }
 
     .nav_label, .nav_input {
@@ -320,58 +275,39 @@ height: 200px;
     }
 
     .logo img {
-
-        margin-left: -30px;
-        }
-
-    .bienvenida {
-        height: 1350px;
+        margin: 0;
+        margin-right: 5px;
     }
 
-    .primarytext {
-        height: 300px;
-    }
 
     .alltext{
-        display: flex;
+        margin-top: 20px;
         flex-direction: column;
         align-items: center;
     }
 
-    .alltext img {
-        width: 300px;
+    .text{
+        margin: 0;
+        width: 80%;
+        padding: 10px;
     }
 
-
-
-
-    .servicios {
-        height: 2200px;
-    }
-
-    .contenido {
-        height: 5000px;
-    }
     .text2 {
         height: 400px;
     }
     
-    .slider {
-        margin-left: 15%;
-    }
 
     .info2{
-        margin-top: 550px;
+        margin-top: 50px;
     }
 
     .slider2 {
         position: absolute;
-        margin-left: 15%;
     }
 
     .precios2 {
         margin: 0;
-        margin-top: 500px;
+        margin-top: 450px;
         width: 100%;
     }
 
