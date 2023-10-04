@@ -220,7 +220,7 @@ nav a:hover {
   flex-wrap: wrap;
   justify-content: center;
   background-color: rgb(165, 153, 177);
-  padding: 5px;
+  padding: 20px;
   gap: 40px;
 }
 
@@ -277,6 +277,48 @@ nav a:hover {
   background: url("/assets/Box_Items/media_estrella.svg") 0 -25px;
 }
 
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+.Contactos{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.Contacto{
+  display: flex;
+  align-items: center;
+}
+
+.Contactos img{
+  margin-right: 10px;
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.red{
+  display: flex;
+  gap: 2rem;
+}
+
+.Footer_img {
+  width: 20%;
+  border-radius: 50%;
+  box-shadow:5px 5px 10px;
+}
+
 /*------------------> ANIMACIONES_SLIDERS <--------------------- */
 
 @keyframes slide {
@@ -311,7 +353,7 @@ nav a:hover {
 
 /*------------------> RESPONSIVE <--------------------- */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .precios {
     margin: 0;
     margin-top: 40px;
@@ -338,13 +380,20 @@ nav a:hover {
     position: fixed;
     top: 80px;
     bottom: 0;
-    background-color: antiquewhite;
+    background-color: rgb(143, 176, 177);
     width: 100%;
     left: 0px;
     display: flex;
     justify-content: right;
     clip-path: inset(0 0 0 100%);
     transition: clip-path 1s ease-in-out;
+  }
+
+  .menu_shadow{
+    box-shadow: -10px 0 10px ;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
   }
 
   .items {
@@ -422,6 +471,15 @@ nav a:hover {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  footer{
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .Footer_img{
+    width: 30%;
   }
 }
 
