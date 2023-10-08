@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="script.js"></script>
+    <script src="/Java/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="/assets/CSS/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,229 +19,247 @@ y precios.
 ● Pie de página con enlaces directos a las redes sociales de la empresa.
 -->
 
-<body>
-    <div class="encabezado">
-        <header>
-            <div class="primarymenu">
-                <a href="" class="logo">
-                    <img src="/assets/Images/Logo.jpeg">
-                    <h2>ENVIGADO LECTOR</h2>
-                </a>
-                <label for="menu" class="nav_label">
-                    <img src="/assets/Box_Items/menu.svg" class="nav_img">
-                </label>
-            </div>
-            <input type="checkbox" id="menu" class="nav_input">
-            <nav class="menu">
-                <div class="items">
-                    <a class="aMenu" href="" class="nav-link">Iniciar Sesión             
-                    <img src="/assets/Box_Items/user.svg" class="nav_img"></a>
-                    <a class="aMenu" href="" class="nav-link">Registrar 
-                    <img src="/assets/Box_Items/register.svg" class="nav_img"></a>
-                    <a class="aMenu" href="" class="nav-link">Acerca de
-                        <img src="/assets/Box_Items/acerca.svg" class="nav_img"></a>
-                    <a class="aMenu" href="" class="nav-link">Servicios
-                        <img src="/assets/Box_Items/servicios.svg" class="nav_img"></a>
-                    <a class="aMenu" href="" class="nav-link">Reseñas
-                        <img src="/assets/Box_Items/reseñas.svg" class="nav_img"></a>
-                    <a class="aMenu" href="" class="nav-link">Contactos
-                    <img src="/assets/Box_Items/contactos.svg" class="nav_img"></a>
-                </div>
-            </nav>
-        </header>
-    </div>
-    <div class="contenido">
-        <div class="bienvenida">
-            <div class="primarytext">
-             <h1>¿Quiénes somos?</h1> 
-                <p>Envigado Lector es una fundación comprometida con
-                la promoción de la lectura y la educación en la comunidad 
-                de Envigado y sus alrededores. Nuestra misión es fomentar 
-                el amor por la lectura y el aprendizaje a lo largo de toda
-                la vida, creando oportunidades para que las personas
-                descubran el mundo a través de las páginas de un libro.</p>
-            </div>
-            <div class="alltext">
-             <div class="text"><a href="">
-                <h2>Libros y Café</h2> 
-                <img src="/assets/Images/Café.jpg">
-               </div></a>
-               <div class="text"><a href="">
-                <h2>Librería de Tere</h2> 
-                <img src="/assets/Images/Tere.jpg">
-               </div>
-               <div class="text"><a href="">
-                <h2>Librería de Fernando</h2> 
-                <img src="/assets/Images/Fernando.jpg">
-               </div></a>
-            </div>
-               
+<body class="hidden">
+    <div class="all">
+        <div class="loader_preview" id="onload">
+            <div class="loader"></div>
         </div>
-        <div class="servicios">
-            <div class="primarytext2">
-                <h1>Libros más demandados</h1> 
-            </div>
-            <div class="info">
-                <div class="slider">
-                    <ul>
-                        <li><img src="/assets/Images/1984.jpg"></li>
-                        <li><img src="/assets/Images/Colombia.jpg"></li>
-                        <li><img src="/assets/Images/descarga.jpg"></li>
-                        <li><img src="/assets/Images/MenteC.jpg"></li>
-                        <li><img src="/assets/Images/Odisea.jpg"></li>
-                        <li><img src="/assets/Images/Quevedo.jpg"></li>
-                        <li><img src="/assets/Images/Quijote-copy-0.jpg"></li>
-                    </ul>
+        <section class="encabezado" id="Acerca-de">
+            <header>
+                <div class="primarymenu">
+                    <a href="" class="logo">
+                        <img src="/assets/Images/Logo.jpeg">
+                        <h2>ENVIGADO LECTOR</h2>
+                    </a>
+                    <label for="menu" class="nav_label">
+                        <img src="/assets/Box_Items/menu.svg" class="nav_img">
+                    </label>
                 </div>
-                <div class="precios">
-                    Título: 1983 <br>
-                    Autor: George Orwell <br>
-                    Sinopsis:
-                    "1984" es una novela distópica de George Orwell que se desarrolla 
-                    en un estado totalitario llamado Oceanía. Sigue la historia de 
-                    Winston Smith mientras lucha contra la opresión del Gran Hermano, 
-                    explorando temas de vigilancia y pérdida de libertad. Es una obra 
-                    maestra que advierte sobre los peligros del totalitarismo. <br> <br>
-                    Título: Historia de Colombia y sus Oligarquías <br>
-                    Autor: Antonio Caballero <br>
-                    Sinopsis: <br>
-                    Este libro de historia, aunque vaya ilustrado con caricaturas, 
-                    no va en chiste: va en serio”, así empieza este fascinante libro,
-                    un agudo recorrido por la historia del país, desde los días del
-                    Descubrimiento y la Conquista, pasando por los años de la Independencia,
-                    la Regeneración, la Hegemonía Conservadora, la República Liberal,
-                    el Frente Nacional, la época de la Violencia, hasta llegar a nuestros días. <br> <br>
-                    Título: Ilíada <br>
-                    Autor: Homero <br>
-                    Sinopsis: <br>
-                    "La Ilíada" es una epopeya clásica escrita por Homero que narra los eventos durante la Guerra de Troya. Sigue las hazañas de héroes como Aquiles y Héctor, y explora temas de gloria, honor y la tragedia de la guerra. Es una obra fundamental de la literatura épica griega.
+                <input type="checkbox" id="menu" class="nav_input">
+                <nav class="menu">
+                    <div class="items">
+                        <a class="aMenu" href="Login.html" class="nav-link">Iniciar Sesión             
+                        <img src="/assets/Box_Items/user.svg" class="nav_img"></a>
+                        <a class="aMenu" href="Register.html" class="nav-link">Registrar 
+                        <img src="/assets/Box_Items/register.svg" class="nav_img"></a>
+                        <a class="aMenu" href="#Acerca-de" class="nav-link">Acerca de
+                            <img src="/assets/Box_Items/acerca.svg" class="nav_img"></a>
+                        <a class="aMenu" href="#Servicios" class="nav-link">Servicios
+                            <img src="/assets/Box_Items/servicios.svg" class="nav_img"></a>
+                        <a class="aMenu" href="#Reseñas" class="nav-link">Reseñas
+                            <img src="/assets/Box_Items/reseñas.svg" class="nav_img"></a>
+                        <a class="aMenu" href="#Contactos" class="nav-link">Contactos
+                        <img src="/assets/Box_Items/contactos.svg" class="nav_img"></a>
+                    </div>
+                </nav>
+            </header>
+        </section>
+        <div class="contenido">
+            <section class="bienvenida">
+                <div class="primarytext">
+                <h1>¿Quiénes somos?</h1> 
+                    <p>Envigado Lector es una fundación comprometida con
+                    la promoción de la lectura y la educación en la comunidad 
+                    de Envigado y sus alrededores. Nuestra misión es fomentar 
+                    el amor por la lectura y el aprendizaje a lo largo de toda
+                    la vida, creando oportunidades para que las personas
+                    descubran el mundo a través de las páginas de un libro.</p>
                 </div>
-            </div>
-            <div class="info2">
-                <div class="precios2">
-                    Título: Odisea <br>
-                    Autor: Homero <br>
-                    Sinopsis: <br>
-                    "La Odisea" es una epopeya griega escrita por Homero que narra el
-                    viaje del héroe Odiseo mientras intenta regresar a su hogar, Ítaca,
-                    después de la Guerra de Troya. A lo largo de su odisea, Odiseo se
-                    enfrenta a numerosos obstáculos, incluyendo criaturas mitológicas 
-                    y dioses, mientras su esposa Penélope lo espera pacientemente en casa.
-                    La historia explora temas de valentía, astucia y el deseo de regresar al hogar. 
-                    Es una de las obras más importantes de la literatura clásica y ha influido en la cultura occidental durante siglos. <br>
-                    Título: El Parnaso
-                    Autor: Francisco de Quevedo <br>
-                    Sinopsis: <br>
-                    "El Parnaso" es una obra del escritor español Francisco de
-                     Quevedo publicada en 1648. En ella, Quevedo satiriza y critica
-                    a varios poetas y escritores de su época, así como a las tendencias 
-                    literarias que consideraba absurdas. La obra es una sátira mordaz
-                    que ridiculiza la poesía y la literatura de su tiempo, mostrando la
-                    aguda crítica y el estilo característico de Quevedo. "El Parnaso" es
-                    una obra importante en la historia de la literatura satírica española. <br> <br>
-                    Título: Cien Años de Soledad <br>
-                    Autor: Gabriel García Marquez <br>
-                    Sinopsis: <br>
-                    "Cien años de soledad" es una novela de Gabriel 
-                    García Márquez que relata la historia de la familia 
-                    Buendía en Macondo a lo largo de varias generaciones.
-                    A través del realismo mágico, explora temas como el
-                    amor, la soledad y la identidad en América Latina. 
-                    Es una obra literaria influyente y aclamada.    
+                <div class="alltext">
+                <div class="text"><a href="">
+                    <h2>Libros y Café</h2> 
+                    <img src="/assets/Images/Café.jpg">
+                </div></a>
+                <div class="text"><a href="">
+                    <h2>Librería de Tere</h2> 
+                    <img src="/assets/Images/Tere.jpg">
                 </div>
-                <div class="slider2">
-                    <ul>
-                        <li><img src="/assets/Images/Odisea.jpg"></li>
-                        <li><img src="/assets/Images/Quevedo.jpg"></li>
-                        <li><img src="/assets/Images/Quijote.jpg"></li>
-                        <li><img src="/assets/Images/Marquez.webp"></li>
-                        <li><img src="/assets/Images/1984.jpg"></li>
-                        <li><img src="/assets/Images/Colombia.jpg"></li>
-                        <li><img src="/assets/Images/Ilíada.jpg"></li>
-                    </ul>
+                <div class="text"><a href="">
+                    <h2>Librería de Fernando</h2> 
+                    <img src="/assets/Images/Fernando.jpg">
+                </div></a>
                 </div>
-            </div>
-        </div>
-        <div class="reseñas"><h1>Reseñas</h1>
-            <div class="personas">
-                <div class="persona">
-                    <div class="persona_imagen"><strong>Juan</strong>
-                        <img src="/assets/Images/Persona1.jpg">
-                        <div class="Estrellas">
-                            <div class="Estrella"></div>
-                            <div class="Estrella"></div>
-                            <div class="Estrella"></div>
-                            <div class="Estrella"></div>
+                
+            </section>
+            <section class="servicios">
+                <div class="primarytext2" id="Servicios">
+                    <h1>Libros más demandados</h1> 
+                </div>
+                <div class="info">
+                    <div class="slider">
+                        <ul>
+                            <li><img src="/assets/Images/1984.jpg"></li>
+                            <li><img src="/assets/Images/Colombia.jpg"></li>
+                            <li><img src="/assets/Images/descarga.jpg"></li>
+                            <li><img src="/assets/Images/MenteC.jpg"></li>
+                            <li><img src="/assets/Images/Odisea.jpg"></li>
+                            <li><img src="/assets/Images/Quevedo.jpg"></li>
+                            <li><img src="/assets/Images/Quijote-copy-0.jpg"></li>
+                        </ul>
+                    </div>
+                    <div class="slider2">
+                        <ul>
+                            <li><img src="/assets/Images/Odisea.jpg"></li>
+                            <li><img src="/assets/Images/Quevedo.jpg"></li>
+                            <li><img src="/assets/Images/Quijote.jpg"></li>
+                            <li><img src="/assets/Images/Marquez.webp"></li>
+                            <li><img src="/assets/Images/1984.jpg"></li>
+                            <li><img src="/assets/Images/Colombia.jpg"></li>
+                            <li><img src="/assets/Images/Ilíada.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="services_cards">
+                    <div class="book">
+                        <p>Hello</p>
+                        <div class="cover">
+                            <img src="/assets/Images/MenteC.jpg" alt="">
                         </div>
                     </div>
-                    "Envigado Lector ha sido un faro de esperanza para muchos de nosotros que, de otra manera, no tendríamos acceso fácil a la educación. Como adulto que ha vuelto a estudiar, he encontrado un apoyo invaluable en esta fundación. Sus programas educativos no solo son instructivos, sino también alentadores. Crean un ambiente donde el aprendizaje se siente como un viaje emocionante en lugar de una tarea tediosa." <br>
+                    <div class="book">
+                        <p>Hello</p>
+                        <div class="cover">
+                            <img src="/assets/Images/Odisea.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="persona">
-                    <div class="persona_imagen"><strong>Samuel</strong>
-                        <img src="/assets/Images/Persona2.jpg">
-                        <div class="Estrellas">
-                            <div class="Estrella"></div>
-                            <div class="Estrella"></div>
-                            <div class="Estrella"></div>
-                            <div class="estrella_Vacía"></div>
+                <div class="allcards">
+                    <div class="cards1">
+                        <div class="card">
+                            <figure>
+                                <img src="/assets/Images/1984.jpg">
+                            </figure>
+                            <div class="card_info">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos alias voluptate et, voluptatum ipsum velit voluptatem soluta nemo quod libero. Possimus debitis quidem eos voluptates atque assumenda, tempore tempora illum!</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <figure>
+                                <img src="/assets/Images/1984.jpg">
+                            </figure>
+                            <div class="card_info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga error qui dolorum, perspiciatis enim neque nobis doloremque mollitia itaque tenetur obcaecati voluptates id quaerat, molestias illum. Eum rerum laboriosam esse?</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <figure>
+                                <img src="/assets/Images/1984.jpg">
+                            </figure>
+                            <div class="card_info">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quis illo voluptatum necessitatibus, eius architecto exercitationem nulla cum aliquam rem repudiandae debitis corporis doloremque recusandae iusto optio in distinctio vero?</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="cards2">
+                            <div class="card">
+                                <figure>
+                                    <img src="/assets/Images/1984.jpg">
+                                </figure>
+                                <div class="card_info">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos alias voluptate et, voluptatum ipsum velit voluptatem soluta nemo quod libero. Possimus debitis quidem eos voluptates atque assumenda, tempore tempora illum!</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <figure>
+                                    <img src="/assets/Images/1984.jpg">
+                                </figure>
+                                <div class="card_info">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga error qui dolorum, perspiciatis enim neque nobis doloremque mollitia itaque tenetur obcaecati voluptates id quaerat, molestias illum. Eum rerum laboriosam esse?</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <figure>
+                                    <img src="/assets/Images/1984.jpg">
+                                </figure>
+                                <div class="card_info">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, quis illo voluptatum necessitatibus, eius architecto exercitationem nulla cum aliquam rem repudiandae debitis corporis doloremque recusandae iusto optio in distinctio vero?</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <section class="reseñas" id="Reseñas"><h1>Reseñas</h1>
+                <div class="personas">
+                    <div class="persona">
+                        <div class="persona_imagen"><strong>Juan</strong>
+                            <img src="/assets/Images/Persona1.jpg">
+                            <div class="Estrellas">
+                                <div class="Estrella"></div>
+                                <div class="Estrella"></div>
+                                <div class="Estrella"></div>
+                                <div class="Estrella"></div>
+                            </div>
+                        </div>
+                        "Envigado Lector ha sido un faro de esperanza para muchos de nosotros que, de otra manera, no tendríamos acceso fácil a la educación. Como adulto que ha vuelto a estudiar, he encontrado un apoyo invaluable en esta fundación. Sus programas educativos no solo son instructivos, sino también alentadores. Crean un ambiente donde el aprendizaje se siente como un viaje emocionante en lugar de una tarea tediosa." <br>
+                    </div>
+                    <div class="persona">
+                        <div class="persona_imagen"><strong>Samuel</strong>
+                            <img src="/assets/Images/Persona2.jpg">
+                            <div class="Estrellas">
+                                <div class="Estrella"></div>
+                                <div class="Estrella"></div>
+                                <div class="Estrella"></div>
+                                <div class="estrella_Vacía"></div>
 
+                            </div>
                         </div>
+                        "Como estudiante universitario, Envigado Lector ha sido mi refugio intelectual. Sus bibliotecas son tesoros llenos de conocimiento y aventuras. La fundación no solo proporciona acceso a una amplia gama de libros, sino que también organiza eventos fascinantes, desde charlas de autores hasta clubes de lectura. Estoy constantemente inspirado por su misión y la pasión con la que la llevan a cabo."
                     </div>
-                    "Como estudiante universitario, Envigado Lector ha sido mi refugio intelectual. Sus bibliotecas son tesoros llenos de conocimiento y aventuras. La fundación no solo proporciona acceso a una amplia gama de libros, sino que también organiza eventos fascinantes, desde charlas de autores hasta clubes de lectura. Estoy constantemente inspirado por su misión y la pasión con la que la llevan a cabo."
-                </div>
-                <div class="persona">
-                    <div class="persona_imagen"><strong>Nelson</strong>
-                        <img src="/assets/Images/Persona3.jpg">
-                        <div class="Estrellas">
-                            <div class="Estrella"></div>
-                            <div class="Estrella"></div>
-                            <div class="Estrella"></div>
-                            <div class="media_Estrella"></div>
+                    <div class="persona">
+                        <div class="persona_imagen"><strong>Nelson</strong>
+                            <img src="/assets/Images/Persona3.jpg">
+                            <div class="Estrellas">
+                                <div class="Estrella"></div>
+                                <div class="Estrella"></div>
+                                <div class="Estrella"></div>
+                                <div class="media_Estrella"></div>
+                            </div>
                         </div>
+                        "Envigado Lector representa la esencia de la transformación educativa. Como padre, he visto cómo mis hijos han florecido gracias a las actividades de la fundación. Además de ofrecer un vasto tesoro de libros, Envigado Lector ha creado un ambiente donde la curiosidad es fomentada y las mentes jóvenes son nutridas. La pasión y el compromiso de su equipo son palpables, y estoy agradecido por el impacto duradero que han tenido en la educación de mis hijos y de muchos otros."
                     </div>
-                    "Envigado Lector representa la esencia de la transformación educativa. Como padre, he visto cómo mis hijos han florecido gracias a las actividades de la fundación. Además de ofrecer un vasto tesoro de libros, Envigado Lector ha creado un ambiente donde la curiosidad es fomentada y las mentes jóvenes son nutridas. La pasión y el compromiso de su equipo son palpables, y estoy agradecido por el impacto duradero que han tenido en la educación de mis hijos y de muchos otros."
-                </div>
-                <div class="persona">
-                    <div class="persona_imagen"><strong>Chad</strong>
-                        <img src="/assets/Images/Persona4.jpg">
-                        <div class="Estrellas">
-                            <div class="Estrella"></div>
-                            <div class="Estrella"></div>
-                            <div class="Estrella"></div>
-                            <div class="Estrella"></div>
+                    <div class="persona">
+                        <div class="persona_imagen"><strong>Chad</strong>
+                            <img src="/assets/Images/Persona4.jpg">
+                            <div class="Estrellas">
+                                <div class="Estrella"></div>
+                                <div class="Estrella"></div>
+                                <div class="Estrella"></div>
+                                <div class="Estrella"></div>
+                            </div>
                         </div>
+                        "Envigado Lector ha sido un pilar fundamental en mi viaje educativo. Su enfoque en fomentar el amor por la lectura ha cambiado mi perspectiva hacia el aprendizaje. La diversidad de libros y recursos disponibles ha enriquecido mi conocimiento y me ha inspirado a explorar nuevos horizontes intelectuales. La fundación no solo brinda libros, sino también una comunidad de mentes ávidas de conocimiento. Estoy agradecido por su impacto en mi desarrollo personal y profesional."
                     </div>
-                    "Envigado Lector ha sido un pilar fundamental en mi viaje educativo. Su enfoque en fomentar el amor por la lectura ha cambiado mi perspectiva hacia el aprendizaje. La diversidad de libros y recursos disponibles ha enriquecido mi conocimiento y me ha inspirado a explorar nuevos horizontes intelectuales. La fundación no solo brinda libros, sino también una comunidad de mentes ávidas de conocimiento. Estoy agradecido por su impacto en mi desarrollo personal y profesional."
                 </div>
-            </div>
+            </section>
+            <footer>
+                    <img src="/assets/Images/Pila_De_Libros.jpg" class="Footer_img">
+                <div class="Contactos" id="Contactos"><strong>Contáctanos</strong>
+                    <div class="Contacto">
+                        <img src="/assets/Box_Items/contactos.svg">+57 320 6974614
+                    </div>
+                    <div class="Contacto">
+                        <img src="/assets/Box_Items/gmail.svg">EnvigadoLector@gmail.com
+                    </div>
+                    <div class="Contacto">
+                        <img src="/assets/Box_Items/location.svg">Cl. 37 Sur #42-28, Zona 9, Envigado, Antioquia
+                    </div>
+                </div>
+                <div class="redes"><strong>Nuestras redes sociales</strong>
+                    <div class="red">
+                        <a href="#">
+                            <img src="/assets/Box_Items/instagram.svg">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/Box_Items/facebook.svg">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/Box_Items/twitter.svg">
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <footer>
-                <img src="/assets/Images/Pila_De_Libros.jpg" class="Footer_img">
-            <div class="Contactos"><strong>Contáctanos</strong>
-                <div class="Contacto">
-                    <img src="/assets/Box_Items/contactos.svg">+57 320 6974614
-                </div>
-                <div class="Contacto">
-                    <img src="/assets/Box_Items/gmail.svg">EnvigadoLector@gmail.com
-                </div>
-                <div class="Contacto">
-                    <img src="/assets/Box_Items/location.svg">Cl. 37 Sur #42-28, Zona 9, Envigado, Antioquia
-                </div>
-            </div>
-            <div class="redes"><strong>Nuestras redes sociales</strong>
-                <div class="red">
-                    <a href="#">
-                        <img src="/assets/Box_Items/instagram.svg">
-                    </a>
-                    <a href="#">
-                        <img src="/assets/Box_Items/facebook.svg">
-                    </a>
-                    <a href="#">
-                        <img src="/assets/Box_Items/twitter.svg">
-                    </a>
-                </div>
-            </div>
-        </footer>
-    </div>
+    </div>      
+
 </body>
 </html>
