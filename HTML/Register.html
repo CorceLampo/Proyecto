@@ -1,28 +1,32 @@
-Envigado Lector es una fundación comprometida con
-la promoción de la lectura y la educación en la comunidad 
-de Envigado y sus alrededores. Nuestra misión es fomentar 
-el amor por la lectura y el aprendizaje a lo largo de toda
-la vida, creando oportunidades para que las personas
-descubran el mundo a través de las páginas de un libro.  </i> 
-<div class="sedes">
-    <h1>Libros y Café</h1>
-    <img src="https://gente.com.co/wp-content/uploads/2019/05/Lo-libros-le%C3%ADdos-siguen-de-moda-en-Envigado.jpg">
-    <h1>Librería de Tere</h1>
-    <img src="https://gente.com.co/wp-content/uploads/2019/05/Lo-libros-le%C3%ADdos-siguen-de-moda-en-Envigado.jpg">
-
-    <style>
-    .sedes {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: 10px;
-        margin-top: 30px;
-        background-color: rgb(235, 197, 162);
-        height: 290px;    
-    }
-    .sedes img {
-        width: 40%;
-        margin-left: 60px;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/CSS/register_styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <section class="principal">
+      <div class="contenido">
+        <div class="primary_text">
+            <a href="index.html"><img src="/assets/Images/Logo.jpeg"></a>
+            <h1>Registro</h1>
+        </div>
+        <p>¿Ya tienes una cuenta? <a href="Login.html">Inicia sesión</a></p>
+        <form class="form" id="signup_form">
+          <label>Nombre</label>
+          <input type="text" required autofocus placeholder="..." class="input" id="name" />
+          <label>Apellidos</label>
+          <input type="text" required autofocus placeholder="..." class="input" id="second_name" />
+          <label>Correo</label>
+          <input type="email" required autofocus placeholder="..." class="input" id="email" />
+          <label>Contraseña</label>
+          <input type="password" required placeholder="..." class="input" id="password" />
+          <input type="submit" value="Registrar" id="signup"/>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="/Java/register_script.js"></script>
+</html>
