@@ -29,6 +29,11 @@
   justify-content: center;
   gap: 1rem;
   width: 100%;
+  cursor: default;
+}
+
+p {
+  cursor: default;
 }
 
 .primary_text img {
@@ -48,6 +53,12 @@
   padding: 40px 10px 40px 10px;
   font-size: medium;
   font-weight: bold;
+  box-shadow: 0px 5px 32px -12px rgba(140,140,140,1);
+}
+
+.form input{
+  font-size: medium;
+  padding: 5px;
 }
 
 .form img {
@@ -76,6 +87,18 @@
 
 #signup:hover {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+#signup:active {
+  animation: parpadeo 0.1s;
+}
+
+@keyframes parpadeo {
+  0% {opacity: 1;}
+
+  50% {opacity: 0;}
+
+  100% {opacity: 1;}
 }
 
 @media (max-width: 800px) {

@@ -50,6 +50,7 @@ body {
 /*------------------> MENÚ <--------------------- */
 .encabezado {
   display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -71,6 +72,11 @@ a {
 
 .items img {
   display: none;
+}
+
+.items {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -456,6 +462,19 @@ footer {
   box-shadow: 5px 5px 10px;
 }
 
+#account {
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  align-items: center;
+  margin-right: 40px;
+  gap: 10px;
+}
+
+#account a {
+  padding: 0;
+}
+
 /*------------------> ANIMACIONES_SLIDERS <--------------------- */
 
 @keyframes slide {
@@ -525,6 +544,10 @@ footer {
     justify-content: space-evenly;
     margin-right: 20px;
     align-items: center;
+  }
+
+  .account {
+    margin: 0;
   }
 
   .items img {
@@ -634,6 +657,10 @@ footer {
 
   .book {
     width: 200px;
+  }
+
+  .perfil {
+    width: 100%;
   }
 }
 
