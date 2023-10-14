@@ -74,3 +74,28 @@
   border-radius: 15px;
   padding: 20px;
 }
+
+                <div id="products-container">
+                    <button>Mostrar carrito de compras</button>
+                    <table border="1">
+                        <tr>
+                            <td>PRODUCTO</td>
+                            <td>PRECIO</td>
+                            <td>CANTIDAD</td>
+                            <td>TOTAL</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                            <td>Dato 3</td>
+                            <td>Dato 4</td>
+                        </tr>
+                        <tr>
+                            <td>Otro dato 1</td>
+                            <td>Otro dato 2</td>
+                            <td>Otro dato 3</td>
+                            <td>Otro dato 4</td>
+                        </tr>
+                    </table>
+                </div>
+              
