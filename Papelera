@@ -98,4 +98,5 @@
                         </tr>
                     </table>
                 </div>
-              
+                    product.price = parseInt(product.price);
+      localStorage.setItem("totalCost", cartCost + product.price);
