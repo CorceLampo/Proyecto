@@ -13,7 +13,7 @@
   position: absolute;
 }
 
-.contenido {
+.body-content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -102,7 +102,7 @@ p {
 }
 
 @media (max-width: 800px) {
-  .contenido {
+  .body-content {
     width: 75%;
   }
 }

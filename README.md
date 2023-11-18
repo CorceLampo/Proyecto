@@ -2,7 +2,7 @@
 
 Proyecto final ruta básica
 Realizar un sitio web para una empresa de su preferencia (puede ser inventada). El
-sitio web debe tener una página de bienvenida en la que se tenga la siguiente
+sitio web debe tener una página de welcome en la que se tenga la siguiente
 estructura:
 ● Menú de navegación.
 ● Banner con el nombre de la empresa.
@@ -12,7 +12,7 @@ y precios.
 ● Sección de reseñas de clientes.
 ● Pie de página con enlaces directos a las redes sociales de la empresa.
 Nota: Toda la información aquí solicitada puede ser ficticia y de propia elección.
-Adicional a la página de bienvenida, se debe tener una página diferente en la que se
+Adicional a la página de welcome, se debe tener una página diferente en la que se
 puedan registrar usuarios con la siguiente información:
 ● Nombres.
 ● Apellidos.

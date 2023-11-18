@@ -4,8 +4,8 @@ window.onload = function () {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  let hideInfoBtns = document.querySelectorAll(".card");
-  let hideInfoElements = document.querySelectorAll(".card_info");
+  let hideInfoBtns = document.querySelectorAll(".services-cards__card");
+  let hideInfoElements = document.querySelectorAll(".services-cards__card--info");
 
   hideInfoBtns.forEach((button, index) => {
     button.addEventListener("click", function () {
@@ -27,19 +27,27 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
   }
 
+  const login = document.getElementById("user-name");
+  let user_container = document.getElementById("menu-user");
+  let account = document.getElementById("nav-menu__items--account")
+  
   if (user) {
-    document.getElementById("user_name").innerText = user.name;
     logout.style.display = "block";
-    user_name.style.cursor = "default";
-    user_name.addEventListener("click", prevenirRedireccion);
-    // add_cart.forEach(cartItem => {
-    //  cartItem.style.display = 'block';
-    // });
+    login.style.display = "none";
+    user_container.style.cursor = "default";
+    user_container.innerHTML += `
+    <div id="user_container">
+    ${user.name}
+    <div>
+    `
+    account.style.backgroundColor = "#cccccc"
+    account.style.padding = "10px 2rem 10px 2rem"
+    account.style.borderRadius = "10px"
+    account.style.gap = "10px"
+    account.style.boxShadow = "0px 5px 32px -12px rgba(140,140,140,1)"
+
   } else {
     logout.style.display = "none";
-    //add_cart.forEach(cartItem => {
-    //  cartItem.style.display = 'none';
-    //});
   }
 
   let products = [
@@ -105,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  let carts = document.querySelectorAll(".add_cart");
+  let carts = document.querySelectorAll(".services-cards__card--addButton");
   for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener("click", () => {
       cartNumbers(products[i]);
@@ -167,53 +175,52 @@ document.addEventListener("DOMContentLoaded", function () {
 function displayCart() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
-  let productContainer = document.querySelector(".products");
+  let productContainer = document.querySelector(".shoping-cart__products");
   let cartCost = localStorage.getItem("totalCost");
-  let productsContainer = document.querySelector(".products-container");
+  let productsContainer = document.querySelector(".shoping-cart");
   let productNumbers = JSON.parse(localStorage.getItem("cartNumbers"));
 
   if (cartItems && productContainer) {
     productContainer.innerHTML = "";
     Object.values(cartItems).map((item) => {
       productContainer.innerHTML += `
-      
-      <div class="book_container">
-        <div class="product">
-          <img class="close" onclick="removeBook('${
+      <div class="table-books">
+        <div class="shoping-cart__indicators--product">
+          <img class="shoping-cart__indicators--close" onclick="removeBook('${
             item.tag
           }')" src="/assets/Box_Items/close.svg">
           <img class="libro" src="/assets/Images/${item.tag}.jpg">
         </div>
-        <div class="price">
-        <p class="indicador">Precio:  </p>
+        <div class="shoping-cart__indicators--price">
+        <p class="shoping-cart__title">Precio:  </p>
         COP$${item.price},00
         </div>
-        <p class="indicador">Cantidad</p>
-        <div class="quantity">
-          <img id="arrow_left" class="decrease" onclick="disminuirCantidad('${
+        <p class="shoping-cart__title">Cantidad</p>
+        <div class="shoping-cart__indicators--quantity">
+          <img class="shoping-cart__indicators--arrows" onclick="disminuirCantidad('${
             item.tag
           }')" src="/assets/Box_Items/left.svg">
           <span>${item.inCart}</span>
-          <img id="arrow_right" class="increase" onclick="aumentarCantidad('${
+          <img class="shoping-cart__indicators--arrows" onclick="aumentarCantidad('${
             item.tag
           }')" src="/assets/Box_Items/right.svg">
         </div>
-        <div class="total">
-        <p class="indicador">Precio total:   </p>
+        <div class="shoping-cart__indicators--total">
+        <p class="shoping-cart__title">Precio total:   </p>
         COP$${item.inCart * item.price},00
         </div>
       </div>
       `;
     });
     productContainer.innerHTML += `
-    <div class="basketTotalContainer">
-      <h4 class="basketTotalTitle"> 
+    <div class="shoping-cart__totalPriceContainer">
+      <h4 class="shoping-cart__totalPriceContainer--title"> 
       Canasta total:
       </h4>
-      <h4 class="basketTotal">
+      <h4 class="shoping-cart__totalPriceContainer--totalPrice">
       $${cartCost},00
       </h4>
-      <div id="buy" onclick="soon()">
+      <div class="shoping-cart_buyButton" onclick="soon()">
       <img src="/assets/Box_Items/cart.svg">Comprar
       </div>
       </div>
