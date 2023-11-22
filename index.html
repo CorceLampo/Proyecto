@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/Java/index_script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="/assets/CSS/index_styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envigado Lector</title>
+</head>
+<!--
+    ● Menú de navegación.
+● Banner con el nombre de la empresa.
+● Sección que hable sobre la empresa y tenga mínimo una imagen.
+● Sección que exponga los servicios que presta la empresa, con características
+y precios.
+● Sección de reseñas de clientes.
+● Pie de página con enlaces directos a las redes sociales de la empresa.
+-->
+
+<body class="hidden">
+    <div class="all">
+        <div class="loader-preview" id="onload">
+            <div class="loader-preview__loader"></div>
+        </div>
+        <section class="header" id="About">
+            <header>
+                <div class="menu-container">
+                    <a href="" class="menu-container__logo">
+                        <img src="/assets/Images/Logo.jpeg">
+                        <h2>ENVIGADO LECTOR</h2>
+                    </a>
+                    <label for="nav-menu" class="nav-label">
+                        <img src="/assets/Box_Items/menu.svg">
+                    </label>
+                </div>
+                <input type="checkbox" id="nav-menu" class="nav-input">
+                <nav class="nav-menu">
+                    <div class="nav-menu__items">
+                        <div class="nav-menu__items--account" id="nav-menu__items--account">
+                            <img src="/assets/Box_Items/user.svg"><a id="user-name"
+                                href="Login.html" class="nav-menu__items--link"><span>Iniciar Sesión</span></a>
+                                <div id="menu-user"></div>
+                            <button id="logout">Salir</button>
+                        </div>
+                        <a href="Register.html" class="nav-menu__items--link">Registrar
+                            <img src="/assets/Box_Items/register.svg" ></a>
+                        <a href="#About" class="nav-menu__items--link">Acerca de
+                            <img src="/assets/Box_Items/acerca.svg"></a>
+                        <a href="#services" class="nav-menu__items--link">Servicios
+                            <img src="/assets/Box_Items/servicios.svg"></a>
+                        <a href="#Reviews" class="nav-menu__items--link">Reseñas
+                            <img src="/assets/Box_Items/reseñas.svg"></a>
+                        <a href="#Contactos" class="nav-menu__items--link">Contactos
+                            <img src="/assets/Box_Items/contactos.svg"></a>
+                    </div>
+                </nav>
+            </header>
+        </section>
+        <div class="body-content">
+            <section class="welcome">
+                <div class="welcome-start">
+                    <h1>¿Quiénes somos?</h1>
+                    <p>Envigado Lector es una fundación comprometida con
+                        la promoción de la lectura y la educación en la comunidad
+                        de Envigado y sus alrededores. Nuestra misión es fomentar
+                        el amor por la lectura y el aprendizaje a lo largo de toda
+                        la vida, creando oportunidades para que las reviews-cards
+                        descubran el mundo a través de las páginas de un libro.</p>
+                </div>
+                <div class="welcome-end">
+                    <div class="welcome-end__text"><a href="">
+                            <h2>Libros y Café</h2>
+                            <img src="/assets/Images/Café.jpg">
+                    </div></a>
+                    <div class="welcome-end__text"><a href="">
+                            <h2>Librería de Tere</h2>
+                            <img src="/assets/Images/Librería1.jpg">
+                    </div>
+                    <div class="welcome-end__text"><a href="">
+                            <h2>Librería de Fernando</h2>
+                            <img src="/assets/Images/Fernando.jpg">
+                    </div></a>
+                </div>
+
+            </section>
+            <section class="services" id="services">
+                <div class="services-start">
+                    <h1>Ofertas especiales</h1>
+                </div>
+                <div class="services-info">
+                    <div class="services-info__slider">
+                        <ul>
+                            <li><img src="/assets/Images/1984.jpg">
+                                <p class="services-info__price">$ 54.400</p>
+                            </li>
+                            <li><img src="/assets/Images/Colombia.jpg">
+                                <p class="services-info__price">$ 54.400</p>
+                            </li>
+                            <li><img src="/assets/Images/descarga.jpg">
+                                <p class="services-info__price">$ 54.400</p>
+                            </li>
+                            <li><img src="/assets/Images/MenteC.jpg">
+                                <p class="services-info__price">$ 54.400</p>
+                            </li>
+                            <!-- Las tres imágenes siguientes no se muestran en la página.
+                            Son relleno para que el slider funcione. -->
+                            <li><img src="/assets/Images/Odisea.jpg"></li>
+                            <li><img src="/assets/Images/Quevedo.jpg"></li>
+                            <li><img src="/assets/Images/Quijote-copy-0.jpg"></li>
+                        </ul>
+                    </div>
+                    <div class="services-info__slider2">
+                        <ul>
+                            <li><img src="/assets/Images/Odisea.jpg">
+                                <p class="services-info__price">$ 54.400</p>
+                            </li>
+                            <li><img src="/assets/Images/Quevedo.jpg">
+                                <p class="services-info__price">$ 54.400</p>
+                            </li>
+                            <li><img src="/assets/Images/Quijote.jpg">
+                                <p class="services-info__price">$ 54.400</p>
+                            </li>
+                            <li><img src="/assets/Images/Marquez.webp">
+                                <p class="services-info__price">$ 54.400</p>
+                            </li>
+                            <!-- Las tres imágenes siguientes no se muestran en la página.
+                            Son relleno para que el slider funcione. -->
+                            <li><img src="/assets/Images/1984.jpg"></li>
+                            <li><img src="/assets/Images/Colombia.jpg"></li>
+                            <li><img src="/assets/Images/Ilíada.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="services-books">
+                    <div class="services-books__book">
+                        <p>¡Descuento especial!<br>50% OFF en tu libro favorito.<br>¡No te lo pierdas!<br><br><del>$65.900</del><br>$ 32.950
+                            <button class="services-cards__card--addButton" >Añadir al carrito</button>
+                        </p>
+
+                        <div class="services-books__cover">
+                            <img src="/assets/Images/Libro 9.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-books__book">
+                        <p>¡Descuento especial!<br>35% OFF en tu libro favorito.<br>¡No te lo pierdas!<br><br><del>$32.950</del><br>$ 21.900
+                        <button class="services-cards__card--addButton" >Añadir al carrito</button>
+                        </p>
+
+                        <div class="services-books__cover">
+                            <img src="/assets/Images/Libro 7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="services-end">
+                    <h2 class="services-end__title">Libros más demandados últimamente</h2>
+                    <div class="services-cards">
+                        <div class="services-cards__card">
+                            <figure>
+                                <img src="/assets/Images/Libro 6.jpg">
+                                <p>$ 28900</p>
+                            </figure>
+                            <div class="services-cards__card--info" >
+                                <p><strong>Allegro: </strong> Este libro es una recopilación de ensayos humorísticos escritos por el historiador económico Carlo M. Cipolla. Aborda temas como la irracionalidad humana, la estupidez y las paradojas de la vida cotidiana.</p>
+                                    <button class="services-cards__card--addButton">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="services-cards__card">
+                            <figure>
+                                <img src="/assets/Images/Libro 4.jpg">
+                                <p>$ 149900</p>
+                            </figure>
+                            <div class="services-cards__card--info">
+                                <p><strong>La Riqueza de las Naciones: </strong> Publicado en 1776, es considerado un texto fundacional en la economía. Smith explora conceptos como la división del trabajo, la competencia y la autorregulación del mercado, argumentando a favor del liberalismo económico.</p>
+                                    <button class="services-cards__card--addButton" >Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="services-cards__card">
+                            <figure>
+                                <img src="/assets/Images/Libro 3.jpg">
+                                <p>$ 28900</p>
+                            </figure>
+                            <div class="services-cards__card--info">
+                                <p><strong>La Regenta: </strong>Novela del realismo español que critica la sociedad y la moral de la época. Sigue la vida de Ana Ozores, la "Regenta", y explora temas de adulterio, religión y la hipocresía social en la ciudad ficticia de Vetusta.
+                                </p>
+                                <button class="services-cards__card--addButton">Añadir al carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="services-cards__card">
+                            <figure>
+                                <img src="/assets/Images/Libro2.jpg">
+                                <p>$ 28900</p>
+                            </figure>
+                            <div class="services-cards__card--info">
+                                <p><Strong>Tragedias: </Strong>Esquilo, dramaturgo griego del siglo V a.C., es conocido por sus trilogías de tragedias. Obras como "Prometeo encadenado" y "Los Persas" exploran temas mitológicos y éticos en el contexto de la antigua Grecia.</p>
+                                    <button class="services-cards__card--addButton">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="services-cards__card">
+                            <figure>
+                                <img src="/assets/Images/Libro1.jpg">
+                                <p>$ 28900</p>
+                            </figure>
+                            <div class="services-cards__card--info">
+                                <p><strong>Meditaciones de Marco Aurelio: </strong>Escritas por el emperador romano Marco Aurelio, son reflexiones filosóficas sobre la ética, la autodisciplina y la moderación. Estas meditaciones ofrecen una visión única de la filosofía estoica.</p>
+                                    <button class="services-cards__card--addButton">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="services-cards__card">
+                            <figure>
+                                <img src="/assets/Images/Libro 8.jpg">
+                                <p>$ 28900</p>
+                            </figure>
+                            <div class="services-cards__card--info">
+                                <p><strong>Fahrenheit 451: </strong>Una distopía que critica la censura y la pérdida de la libertad intelectual en una sociedad donde los libros están prohibidos y "los bomberos" queman cualquier forma de literatura.
+                                </p>
+                                <button class="services-cards__card--addButton">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="services-cards__card">
+                            <figure>
+                                <img src="/assets/Images/Libro 10.jpg">
+                                <p>$ 35900</p>
+                            </figure>
+                            <div class="services-cards__card--info">
+                                <p><strong>La Biblia: </strong>Texto sagrado para varias religiones, incluyendo el cristianismo y el judaísmo. Compuesta por dos partes principales, el Antiguo y el Nuevo Testamento, abarca enseñanzas religiosas, históricas y éticas.
+                                </p>
+                                <button class="services-cards__card--addButton">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="services-cards__card">
+                            <figure>
+                                <img src="/assets/Images/Libro 11.jpg">
+                                <p>$ 35900</p>
+                            </figure>
+                            <div class="services-cards__card--info">
+                                <p><strong>El Corán: </strong>Texto sagrado para varias religiones, incluyendo el cristianismo y el judaísmo. Compuesta por dos partes principales, el Antiguo y el Nuevo Testamento, abarca enseñanzas religiosas, históricas y éticas.
+                                </p>
+                                <button class="services-cards__card--addButton">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="services-cards__card">
+                            <figure>
+                                <img src="/assets/Images/Libro 12.jpg">
+                                <p>$ 39900</p>
+                            </figure>
+                            <div class="services-cards__card--info">
+                                <p><strong>Colombia: </strong>Este libro podría abordar diversos aspectos de la historia, cultura y sociedad de Colombia. Sin información específica sobre la obra, es difícil proporcionar detalles más precisos.
+                                </p>
+                                <button class="services-cards__card--addButton">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="services-cards__card">
+                            <figure>
+                                <img src="/assets/Images/Libro 13.jpg">
+                                <p>$ 39900</p>
+                            </figure>
+                            <div class="services-cards__card--info">
+                                <p><strong>El Hombre en Busca de Sentido: </strong>Basado en las experiencias del autor en campos de concentración nazis, el libro explora la búsqueda de significado en la vida y la importancia de encontrar un propósito incluso en las circunstancias más difíciles.
+                                </p>
+                                <button class="services-cards__card--addButton">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoping-cart">
+                    <h4 class="shoping-cart__title">Canasta de compras</h4>
+                    <div class="shoping-cart__indicators">
+                        <h5 class="shoping-cart__indicators--product">PRODUCTO</h5>
+                        <h5 class="shoping-cart__indicators--price">PRECIO</h5>
+                        <h5 class="shoping-cart__indicators--quantity">CANTIDAD</h5>
+                        <h5 class="shoping-cart__indicators--total">TOTAL</h5>
+                    </div>
+                    <div class="shoping-cart__products">
+                    </div>
+                </div>
+            </section>
+            <section class="reviews" id="Reviews">
+                <h1>Reseñas</h1>
+                <div class="reviews-cards">
+                    <div class="reviews-cards__card">
+                        <div class="reviews-cards__card--column">
+                            <strong>Juan</strong>
+                            <img src="/assets/Images/Persona1.jpg">
+                            <div class="reviews-cards__card--stars">
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--Star"></div>
+                            </div>
+                        </div>
+                        "Envigado Lector ha sido un faro de esperanza para muchos de nosotros que, de otra manera, no
+                        tendríamos acceso fácil a la educación. Como adulto que ha vuelto a estudiar, he encontrado un
+                        apoyo invaluable en esta fundación. Sus programas educativos no solo son instructivos, sino
+                        también alentadores. Crean un ambiente donde el aprendizaje se siente como un viaje emocionante
+                        en lugar de una tarea tediosa." <br>
+                    </div>
+                    <div class="reviews-cards__card">
+                        <div class="reviews-cards__card--column">
+                            <strong>Samuel</strong>
+                            <img src="/assets/Images/Persona2.jpg">
+                            <div class="reviews-cards__card--stars">
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--emptyStar"></div>
+
+                            </div>
+                        </div>
+                        "Como estudiante universitario, Envigado Lector ha sido mi refugio intelectual. Sus bibliotecas
+                        son tesoros llenos de conocimiento y aventuras. La fundación no solo proporciona acceso a una
+                        amplia gama de libros, sino que también organiza eventos fascinantes, desde charlas de autores
+                        hasta clubes de lectura. Estoy constantemente inspirado por su misión y la pasión con la que la
+                        llevan a cabo."
+                    </div>
+                    <div class="reviews-cards__card">
+                        <div class="reviews-cards__card--column">
+                            <strong>Nelson</strong>
+                            <img src="/assets/Images/Persona3.jpg">
+                            <div class="reviews-cards__card--stars">
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--halfStar"></div>
+                            </div>
+                        </div>
+                        "Envigado Lector representa la esencia de la transformación educativa. Como padre, he visto cómo
+                        mis hijos han florecido gracias a las actividades de la fundación. Además de ofrecer un vasto
+                        tesoro de libros, Envigado Lector ha creado un ambiente donde la curiosidad es fomentada y las
+                        mentes jóvenes son nutridas. La pasión y el compromiso de su equipo son palpables, y estoy
+                        agradecido por el impacto duradero que han tenido en la educación de mis hijos y de muchos
+                        otros."
+                    </div>
+                    <div class="reviews-cards__card">
+                        <div class="reviews-cards__card--column">
+                            <strong>Chad</strong>
+                            <img src="/assets/Images/Persona4.jpg">
+                            <div class="reviews-cards__card--stars">
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--Star"></div>
+                                <div class="reviews-cards__card--Star"></div>
+                            </div>
+                        </div>
+                        "Envigado Lector ha sido un pilar fundamental en mi viaje educativo. Su enfoque en fomentar el
+                        amor por la lectura ha cambiado mi perspectiva hacia el aprendizaje. La diversidad de libros y
+                        recursos disponibles ha enriquecido mi conocimiento y me ha inspirado a explorar nuevos
+                        horizontes intelectuales. La fundación no solo brinda libros, sino también una comunidad de
+                        mentes ávidas de conocimiento. Estoy agradecido por su impacto en mi desarrollo personal y
+                        profesional."
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <img src="/assets/Images/Logo.jpeg" class="footer__img">
+                <div class="footer-contacts" id="Contactos"><strong>Contáctanos</strong>
+                    <div class="footer-contacts__contact">
+                        <img src="/assets/Box_Items/contactos.svg">+57 320 6974614
+                    </div>
+                    <div class="footer-contacts__contact">
+                        <img src="/assets/Box_Items/gmail.svg">EnvigadoLector@gmail.com
+                    </div>
+                    <div class="footer-contacts__contact">
+                        <img src="/assets/Box_Items/location.svg">Cl. 37 Sur #42-28, Zona 9, Envigado, Antioquia
+                    </div>
+                </div>
+                <div class="footer-networks"><strong>Nuestras redes sociales</strong>
+                    <div class="footer-networks__container">
+                        <a href="https://www.instagram.com/libross_y_cafee/" target="_blank">
+                            <img src="/assets/Box_Items/instagram.svg">
+                        </a>
+                        <a href="https://www.facebook.com/people/Libros-y-Caf%C3%A9/100064032063762/" target="_blank">
+                            <img src="/assets/Box_Items/facebook.svg">
+                        </a>
+                        <a href="https://twitter.com/libroycafe" target="_blank">
+                            <img src="/assets/Box_Items/twitter.svg">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
+
+
+

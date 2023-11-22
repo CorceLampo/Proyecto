@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/CSS/register_styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <section class="all-body">
+      <div class="register-start">
+        <div class="register-start__text">
+          <a href="index.html"><img src="/assets/Images/Logo.jpeg" /></a>
+          <h1>Registro</h1>
+        </div>
+        <p>¿Ya tienes una cuenta? <a href="Login.html">Inicia sesión</a></p>
+        <form class="form" id="signup_form">
+          <label>Nombre</label>
+          <input
+            type="text"
+            required
+            autofocus
+            placeholder="..."
+            class="register-form__input"
+            id="name"
+          />
+          <label>Apellidos</label>
+          <input
+            type="text"
+            required
+            autofocus
+            placeholder="..."
+            class="register-form__input"
+            id="second_name"
+          />
+          <label>Correo</label>
+          <input
+            type="email"
+            required
+            autofocus
+            placeholder="..."
+            class="register-form__input"
+            id="email"
+          />
+          <label>Contraseña</label>
+          <input
+            type="password"
+            required
+            placeholder="..."
+            class="register-form__input"
+            id="password"
+          />
+          <label class="sexos">
+            <label class="sexo">
+              <input
+                type="radio"
+                name="sex"
+                class="register-form__input"
+                id="man_sex"
+                name="Hombre"
+              />Hombre</label
+            >
+            <label class="sexo"
+              ><input
+                type="radio"
+                name="sex"
+                class="register-form__input"
+                id="woman_sex"
+                name="Mujer"
+              />Mujer</label
+            >
+          </label>
+          <input type="submit" value="Registrar" id="signup" />
+        </form>
+      </div>
+    </section>
+
+    <form></form>
+  </body>
+  <script src="/Java/register_script.js"></script>
+</html>

@@ -1,0 +1,102 @@
+                    <div class="precios">
+                        Título: 1983 <br>
+                        Autor: George Orwell <br>
+                        Sinopsis:
+                        "1984" es una novela distópica de George Orwell que se desarrolla 
+                        en un estado totalitario llamado Oceanía. Sigue la historia de 
+                        Winston Smith mientras lucha contra la opresión del Gran Hermano, 
+                        explorando temas de vigilancia y pérdida de libertad. Es una obra 
+                        maestra que advierte sobre los peligros del totalitarismo. <br> <br>
+                        Título: Historia de Colombia y sus Oligarquías <br>
+                        Autor: Antonio Caballero <br>
+                        Sinopsis: <br>
+                        Este libro de historia, aunque vaya ilustrado con caricaturas, 
+                        no va en chiste: va en serio”, así empieza este fascinante libro,
+                        un agudo recorrido por la historia del país, desde los días del
+                        Descubrimiento y la Conquista, pasando por los años de la Independencia,
+                        la Regeneración, la Hegemonía Conservadora, la República Liberal,
+                        el Frente Nacional, la época de la Violencia, hasta llegar a nuestros días. <br> <br>
+                        Título: Ilíada <br>
+                        Autor: Homero <br>
+                        Sinopsis: <br>
+                        "La Ilíada" es una epopeya clásica escrita por Homero que narra los eventos durante la Guerra de Troya. Sigue las hazañas de héroes como Aquiles y Héctor, y explora temas de gloria, honor y la tragedia de la guerra. Es una obra fundamental de la literatura épica griega.
+                    </div>
+
+                                        <div class="precios2">
+                        Título: Odisea <br>
+                        Autor: Homero <br>
+                        Sinopsis: <br>
+                        "La Odisea" es una epopeya griega escrita por Homero que narra el
+                        viaje del héroe Odiseo mientras intenta regresar a su hogar, Ítaca,
+                        después de la Guerra de Troya. A lo largo de su odisea, Odiseo se
+                        enfrenta a numerosos obstáculos, incluyendo criaturas mitológicas 
+                        y dioses, mientras su esposa Penélope lo espera pacientemente en casa.
+                        La historia explora temas de valentía, astucia y el deseo de regresar al hogar. 
+                        Es una de las obras más importantes de la literatura clásica y ha influido en la cultura occidental durante siglos. <br>
+                        Título: El Parnaso
+                        Autor: Francisco de Quevedo <br>
+                        Sinopsis: <br>
+                        "El Parnaso" es una obra del escritor español Francisco de
+                        Quevedo publicada en 1648. En ella, Quevedo satiriza y critica
+                        a varios poetas y escritores de su época, así como a las tendencias 
+                        literarias que consideraba absurdas. La obra es una sátira mordaz
+                        que ridiculiza la poesía y la literatura de su tiempo, mostrando la
+                        aguda crítica y el estilo característico de Quevedo. "El Parnaso" es
+                        una obra importante en la historia de la literatura satírica española. <br> <br>
+                        Título: Cien Años de Soledad <br>
+                        Autor: Gabriel García Marquez <br>
+                        Sinopsis: <br>
+                        "Cien años de soledad" es una novela de Gabriel 
+                        García Márquez que relata la historia de la familia 
+                        Buendía en Macondo a lo largo de varias generaciones.
+                        A través del realismo mágico, explora temas como el
+                        amor, la soledad y la identidad en América Latina. 
+                        Es una obra literaria influyente y aclamada.    
+                    </div>
+
+
+                   
+.precios {
+  display: flex;
+  background-color: var(--color-primario);
+  margin: 20px auto auto 300px;
+  text-align: justify;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.precios2 {
+  display: flex;
+  background-color: var(--color-primario);
+  width: 70%;
+  text-align: justify;
+  margin-right: 50px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+                <div id="products-container">
+                    <button>Mostrar carrito de compras</button>
+                    <table border="1">
+                        <tr>
+                            <td>PRODUCTO</td>
+                            <td>PRECIO</td>
+                            <td>CANTIDAD</td>
+                            <td>TOTAL</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                            <td>Dato 3</td>
+                            <td>Dato 4</td>
+                        </tr>
+                        <tr>
+                            <td>Otro dato 1</td>
+                            <td>Otro dato 2</td>
+                            <td>Otro dato 3</td>
+                            <td>Otro dato 4</td>
+                        </tr>
+                    </table>
+                </div>
+                    product.price = parseInt(product.price);
+      localStorage.setItem("totalCost", cartCost + product.price);
