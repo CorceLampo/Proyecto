@@ -261,11 +261,17 @@ nav a:hover {
 
 .services-cards__card--info {
   display: none;
-  padding-top: 30px;
 }
 
 .services-cards__card--addButton{
-  margin: 20px;
+  background-color: rgb(102, 138, 192);
+  padding: 10px;
+  width: 70%;
+  border-radius: 100px;
+  font-weight: bold;
+  border: none;
+  margin: 1rem 0 1.5rem 0;
+  cursor: pointer;
 }
 
 .show {
@@ -339,11 +345,11 @@ nav a:hover {
 .services-info__price,
 .services-books__book p {
   font-size: 18px;
-  font-style: italic; /* Texto en cursiva */
+  font-style: italic;
   font-style: oblique 20deg;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
   padding: 10px;
-  border-radius: 10px; /* Bordes redondeados */
+  border-radius: 10px; 
   padding-left: 35px;
   cursor: default;
 }
@@ -503,6 +509,12 @@ nav a:hover {
   gap: 1.5rem;
 }
 
+.reviews-cards__card--column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .reviews-cards__card img {
   font-family: inherit;
   border-radius: 50%;
@@ -594,15 +606,18 @@ footer {
   align-items: last baseline;
   align-items: center;
   margin-right: 40px;
-  gap: 10px;
 }
 
 .nav-menu__items--account a {
   padding: 0;
 }
 
-
-
+#logout{
+  background-color: #ededed;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
 
 /*------------------> ANIMACIONES DE SLIDERS <--------------------- */
 
@@ -677,6 +692,7 @@ footer {
 
   .nav-menu__items--account {
     margin: 0;
+    gap: 10px;;
   }
 
   .nav-menu__items img {
@@ -786,6 +802,8 @@ footer {
 
   .services-books__book {
     width: 200px;
+    display: flex;
+
   }
   
   .shoping-cart__title{

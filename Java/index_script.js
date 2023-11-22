@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const user = JSON.parse(localStorage.getItem("login_sucess")) || false;
-  const user_name = document.getElementById("user_name");
 
   const logout = document.querySelector("#logout");
   logout.addEventListener("click", () => {
@@ -23,14 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
     this.location.reload();
   });
 
-  function prevenirRedireccion(event) {
-    event.preventDefault();
-  }
-
   const login = document.getElementById("user-name");
   let user_container = document.getElementById("menu-user");
   let account = document.getElementById("nav-menu__items--account")
-  
+  const addToCartButton = document.querySelectorAll(".services-cards__card--addButton")
+
   if (user) {
     logout.style.display = "block";
     login.style.display = "none";
@@ -46,69 +42,85 @@ document.addEventListener("DOMContentLoaded", function () {
     account.style.gap = "10px"
     account.style.boxShadow = "0px 5px 32px -12px rgba(140,140,140,1)"
 
-  } else {
+  } else {  
     logout.style.display = "none";
+    addToCartButton.forEach(button => {
+    button.style.display = "none";
+    })
   }
 
   let products = [
     {
+      name: "Un Mundo Feliz",
+      tag: "Libro 9",
+      price: "32950",
+      inCart: "0",
+    },
+    {
+      name: "Animal Farm",
+      tag: "Libro 7",
+      price: "21900",
+      inCart: "0",
+    },
+
+    {
       name: "Alegro ma non troppo",
       tag: "Libro 6",
-      price: "30000",
+      price: "28900",
       inCart: "0",
     },
     {
       name: "Adam Smith",
       tag: "Libro 4",
-      price: "110000",
+      price: "149900",
       inCart: "0",
     },
     {
       name: "La Regenta",
       tag: "Libro 3",
-      price: "20000",
+      price: "28900",
       inCart: "0",
     },
     {
       name: "Tragedias",
       tag: "Libro2",
-      price: "30000",
+      price: "28900",
       inCart: "0",
     },
     {
       name: "Meditaciones",
       tag: "Libro1",
-      price: "30000",
+      price: "28900",
       inCart: "0",
     },
     {
       name: "Fahrenheit 451",
       tag: "Libro 8",
-      price: "30000",
+      price: "28900",
       inCart: "0",
     },
     {
       name: "Santa Biblia",
       tag: "Libro 10",
-      price: "20000",
+      price: "35900",
       inCart: "0",
     },
     {
       name: "El Corán",
       tag: "Libro 11",
-      price: "30000",
+      price: "35900",
       inCart: "0",
     },
     {
       name: "Historia Mínima de Colombia",
       tag: "Libro 12",
-      price: "40000",
+      price: "39900",
       inCart: "0",
     },
     {
       name: "El Hombre en busca de Sentido",
       tag: "Libro 13",
-      price: "30000",
+      price: "39900",
       inCart: "0",
     },
   ];
@@ -136,7 +148,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function setItems(product) {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
-
     if (cartItems != null) {
       if (cartItems[product.tag] == undefined) {
         cartItems = {
@@ -273,7 +284,6 @@ function removeBook(tag) {
   if (cartItems[tag] && cartItems[tag].inCart > 0) {
     cartItems[tag].inCart--;
 
-    // Actualizar el número total de productos y el costo total
     localStorage.setItem("cartNumbers", productNumbers - 1);
     cartCost = cartCost - cartItems[tag].price;
     localStorage.setItem("totalCost", JSON.stringify(cartCost));
