@@ -59,21 +59,18 @@
   display: inline-block;
   width: 25px;
   height: 25px;
-  background: url("/assets/Boxitems/estrella.svg") 0 -25px;
 }
 
 .reviews-cards__card--emptyStar {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background: url("/assets/Boxitems/estrella_vacía.svg") 0 -25px;
 }
 
 .reviews-cards__card--halfStar {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background: url("/assets/Boxitems/media_estrella.svg") 0 -25px;
 }
 
 footer {
