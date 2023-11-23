@@ -1,0 +1,207 @@
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 60px 40px 60px;
+  text-align: center;
+  background-color: hsl(0, 0%, 81%);
+  justify-content: center;
+}
+
+.services-start {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.services-info {
+  display: flex;
+  background-color: rgb(126, 126, 126);
+  width: 50%;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.services-info__slider,
+.services-info__slider2 {
+  width: 190px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.services-info__slider ul,
+.services-info__slider2 ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  transition: 1s;
+  animation: slide 50s infinite alternate ease-in-out;
+}
+
+.services-info__slider li,
+.services-info__slider2 li {
+  list-style: none;
+  width: 100%;
+}
+
+.services-info__slider img,
+.services-info__slider2 img {
+  width: 190px;
+}
+
+.services-info__slider p,
+.services-info__slider2 p {
+  margin: 0;
+  font-weight: bold;
+  color: #3b322f;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 3px;
+  font-family: "Arial Black", sans-serif;
+  background-color: #cec7c467;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.services-cards {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-cards__card {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-celeste);
+  margin: 20px;
+  margin-bottom: 10px 0 -10px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.services-cards__card:hover {
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.services-cards__card img {
+  width: 120px;
+}
+
+.services-cards__card p {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 15px 0 0 0;
+  font-size: larger;
+}
+
+.services-cards__card--info {
+  display: none;
+}
+
+.services-cards__card--addButton {
+  background-color: rgb(50, 85, 138);
+  padding: 10px;
+  width: 70%;
+  border-radius: 100px;
+  font-weight: bold;
+  border: none;
+  margin: 1rem 0 1.5rem 0;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+  max-width: 300px;
+}
+
+.services-end__title {
+  margin: 100px 0 0 0;
+}
+
+.services-books__book {
+  position: relative;
+  border-radius: 10px;
+  width: 195px;
+  height: 300px;
+  background: url("./assets/Images/Hoja.jpg") center center/cover;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+  cursor: default;
+}
+
+.services-books__cover {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: default;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.services-books__book:hover .services-books__cover {
+  -webkit-transition: all 0.5s;
+  transition: all 1s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+.services-info__price,
+.services-books__book p {
+  font-size: 18px;
+  font-style: italic;
+  font-style: oblique 20deg;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 35px;
+  cursor: default;
+}
+
+.services-books {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(126, 126, 126);
+  margin-left: 30px;
+  justify-content: space-around;
+  align-items: center;
+  width: 42%;
+  border-radius: 1rem;
+}

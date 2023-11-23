@@ -1,0 +1,251 @@
+@media (max-width: 850px) {
+  header {
+    display: flex;
+  }
+
+  .menu-container {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background-color: rgb(143, 176, 177);
+    width: 100%;
+    left: 0px;
+    display: flex;
+    justify-content: right;
+    clip-path: inset(0 0 0 100%);
+    transition: clip-path 1s ease-in-out;
+  }
+
+  .menu_shadow {
+    box-shadow: -10px 0 10px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .nav-menu__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+    align-items: center;
+  }
+
+  .nav-menu__items--account {
+    margin: 0;
+    gap: 10px;
+  }
+
+  .nav-menu__items img {
+    display: block;
+  }
+
+  .nav-input:checked + .nav-menu {
+    clip-path: inset(0 0 0 50%);
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+  }
+
+  .nav-label,
+  .nav-input {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-label {
+    margin-left: 0px;
+  }
+
+  nav a {
+    padding: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .menu-container__logo img {
+    margin: 0;
+    margin-right: 10px;
+    width: 14%;
+  }
+
+  .welcome-end {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-end img {
+    width: 100%;
+  }
+
+  .welcome-end__text {
+    margin: 0;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .welcome-end__text2 {
+    height: 400px;
+  }
+
+  .reviews-cards {
+    text-align: justify;
+  }
+
+  .reviews-cards__card {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .footer__img {
+    width: 100px;
+  }
+
+  .services-cards1,
+  .services-cards2 {
+    flex-wrap: wrap;
+  }
+
+  .services-cards__card {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .services-end {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .services-info {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 40px;
+  }
+
+  .services-books {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px 0 20px 0;
+    gap: 50px;
+    padding: 40px;
+  }
+
+  .services-books__book {
+    width: 200px;
+    display: flex;
+  }
+
+  .shoping-cart__title {
+    display: block;
+    font-weight: bold;
+  }
+
+  .shoping-cart {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 650px;
+    flex-wrap: wrap;
+  }
+
+  .shoping-cart__indicators {
+    display: none;
+  }
+
+  .shoping-cart__indicators--price {
+    display: flex;
+    align-items: center;
+    cursor: default;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    gap: 1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+  .shoping-cart__indicators--total {
+    display: flex;
+    align-items: center;
+    cursor: default;
+    width: 100%;
+    margin-bottom: 2rem;
+    border: none;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .shoping-cart__indicators--quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    border: none;
+  }
+
+  .shoping-cart__indicators--product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-top: 1px solid;
+    width: 100%;
+  }
+
+  .shoping-cart__products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .shoping-cart__indicators--close {
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .shoping-cart__indicators--arrows {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .shoping-cart__totalPriceContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: default;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+  }
+
+  .table-books {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

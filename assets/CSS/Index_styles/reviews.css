@@ -1,0 +1,138 @@
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0 80px 0;
+  text-align: center;
+  background-color: hsl(0, 0%, 81%);
+  justify-content: center;
+}
+
+.reviews-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(165, 153, 177);
+  padding: 20px;
+  gap: 40px;
+  width: 100%;
+}
+
+.reviews-cards__card {
+  display: flex;
+  width: 40%;
+  background-color: var(--color-celeste);
+  padding: 20px;
+  border-radius: 20px;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.reviews-cards__card--column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-cards__card img {
+  font-family: inherit;
+  border-radius: 50%;
+  display: block;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border: 6px solid rgba(207, 187, 187, 0.275);
+}
+
+.reviews-cards__card_imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: larger;
+}
+
+.reviews-cards__card--stars {
+  font-size: 0;
+}
+
+.reviews-cards__card--Star {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("./assets/box_items/estrella.svg") 0 -25px;
+}
+
+.reviews-cards__card--emptyStar {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("./assets/box_items/estrella_vacía.svg") 0 -25px;
+}
+
+.reviews-cards__card--halfStar {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("./assets/box_items/media_estrella.svg") 0 -25px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.footer-contacts__contact {
+  display: flex;
+  align-items: center;
+}
+
+.footer-contacts img {
+  margin-right: 10px;
+}
+
+.footer-networks {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer-networks__container {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__img {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px;
+}
+
+.nav-menu__items--account {
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.nav-menu__items--account a {
+  padding: 0;
+}
+
+#logout {
+  background-color: #ededed;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}

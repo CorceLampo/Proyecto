@@ -1,0 +1,108 @@
+.shoping-cart {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 650px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.shoping-cart__indicators {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.shoping-cart__indicators--product {
+  width: 45%;
+}
+
+.shoping-cart__indicators--price {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  border-bottom: 1px solid;
+  cursor: default;
+}
+
+.shoping-cart__indicators--total {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid;
+  cursor: default;
+}
+
+.shoping-cart__indicators--quantity {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid;
+  cursor: default;
+}
+
+.shoping-cart__indicators--product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  width: 45%;
+  border-bottom: 1px solid;
+  gap: 1rem;
+}
+
+.shoping-cart__products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shoping-cart__indicators--close {
+  width: 30px;
+  cursor: pointer;
+}
+
+.shoping-cart__indicators--arrows {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.libro {
+  width: 80px;
+}
+
+.shoping-cart__totalPriceContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  cursor: default;
+}
+
+.table-books {
+  display: flex;
+  width: 100%;
+}
+
+.shoping-cart_buyButton {
+  display: flex;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 10px;
+  border-radius: 100px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.shoping-cart_buyButton:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.shoping-cart__title {
+  display: none;
+}
