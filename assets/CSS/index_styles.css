@@ -109,7 +109,7 @@ nav a:hover {
   margin: 20px auto auto 20px;
 }
 
-.nav-menu__items--link{
+.nav-menu__items--link {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -242,6 +242,7 @@ nav a:hover {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transition: all 400ms ease;
   cursor: pointer;
+  padding: 1rem;
 }
 
 .services-cards__card:hover {
@@ -264,7 +265,7 @@ nav a:hover {
   display: none;
 }
 
-.services-cards__card--addButton{
+.services-cards__card--addButton {
   background-color: rgb(50, 85, 138);
   padding: 10px;
   width: 70%;
@@ -289,7 +290,7 @@ nav a:hover {
   border-radius: 10px;
   width: 195px;
   height: 300px;
-  background: url("/assets/Images/Hoja.jpg") center center/cover;
+  background: url("./assets/Images/Hoja.jpg") center center/cover;
   -webkit-box-shadow: 1px 1px 12px #000;
   box-shadow: 1px 1px 12px #000;
   -webkit-transform: preserve-3d;
@@ -348,9 +349,9 @@ nav a:hover {
   font-size: 18px;
   font-style: italic;
   font-style: oblique 20deg;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   padding: 10px;
-  border-radius: 10px; 
+  border-radius: 10px;
   padding-left: 35px;
   cursor: default;
 }
@@ -368,7 +369,7 @@ nav a:hover {
 
 /*------------------> CANASTA DE COMPRAS <--------------------- */
 
-.shoping-cart{
+.shoping-cart {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -378,18 +379,18 @@ nav a:hover {
   width: 100%;
 }
 
-.shoping-cart__indicators{
+.shoping-cart__indicators {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
 
-.shoping-cart__indicators--product{
+.shoping-cart__indicators--product {
   width: 45%;
 }
 
-.shoping-cart__indicators--price{
+.shoping-cart__indicators--price {
   display: flex;
   align-items: center;
   width: 15%;
@@ -397,7 +398,7 @@ nav a:hover {
   cursor: default;
 }
 
-.shoping-cart__indicators--total{
+.shoping-cart__indicators--total {
   width: 10%;
   display: flex;
   align-items: center;
@@ -405,7 +406,7 @@ nav a:hover {
   cursor: default;
 }
 
-.shoping-cart__indicators--quantity{
+.shoping-cart__indicators--quantity {
   width: 30%;
   display: flex;
   align-items: center;
@@ -414,7 +415,7 @@ nav a:hover {
   cursor: default;
 }
 
-.shoping-cart__indicators--product{
+.shoping-cart__indicators--product {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -424,42 +425,40 @@ nav a:hover {
   gap: 1rem;
 }
 
-.shoping-cart__products{
+.shoping-cart__products {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
-.shoping-cart__indicators--close{
+.shoping-cart__indicators--close {
   width: 30px;
   cursor: pointer;
 }
 
-.shoping-cart__indicators--arrows{
+.shoping-cart__indicators--arrows {
   width: 25px;
   height: 25px;
   cursor: pointer;
 }
 
-.libro{
+.libro {
   width: 80px;
-  
 }
 
-.shoping-cart__totalPriceContainer{
+.shoping-cart__totalPriceContainer {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 100%;
   padding: 10px 0;
   cursor: default;
 }
 
-
-.table-books{
+.table-books {
   display: flex;
   width: 100%;
 }
 
-.shoping-cart_buyButton{
+.shoping-cart_buyButton {
   display: flex;
   align-items: center;
   background-color: cadetblue;
@@ -475,7 +474,7 @@ nav a:hover {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
-.shoping-cart__title{
+.shoping-cart__title {
   display: none;
 }
 
@@ -510,7 +509,7 @@ nav a:hover {
   gap: 1.5rem;
 }
 
-.reviews-cards__card--column{
+.reviews-cards__card--column {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -542,21 +541,21 @@ nav a:hover {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background: url("/assets/Box_Items/estrella.svg") 0 -25px;
+  background: url("./assets/box_items/estrella.svg") 0 -25px;
 }
 
 .reviews-cards__card--emptyStar {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background: url("/assets/Box_Items/estrella_vacía.svg") 0 -25px;
+  background: url("./assets/box_items/estrella_vacía.svg") 0 -25px;
 }
 
 .reviews-cards__card--halfStar {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background: url("/assets/Box_Items/media_estrella.svg") 0 -25px;
+  background: url("./assets/box_items/media_estrella.svg") 0 -25px;
 }
 
 footer {
@@ -613,7 +612,7 @@ footer {
   padding: 0;
 }
 
-#logout{
+#logout {
   background-color: #ededed;
   font-weight: bold;
   border: none;
@@ -693,7 +692,7 @@ footer {
 
   .nav-menu__items--account {
     margin: 0;
-    gap: 10px;;
+    gap: 10px;
   }
 
   .nav-menu__items img {
@@ -804,15 +803,14 @@ footer {
   .services-books__book {
     width: 200px;
     display: flex;
-
   }
-  
-  .shoping-cart__title{
+
+  .shoping-cart__title {
     display: block;
     font-weight: bold;
   }
 
-  .shoping-cart{
+  .shoping-cart {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
@@ -820,12 +818,12 @@ footer {
     max-width: 650px;
     flex-wrap: wrap;
   }
-  
-  .shoping-cart__indicators{
+
+  .shoping-cart__indicators {
     display: none;
   }
-  
-  .shoping-cart__indicators--price{
+
+  .shoping-cart__indicators--price {
     display: flex;
     align-items: center;
     cursor: default;
@@ -837,8 +835,8 @@ footer {
     border-bottom: 1px solid black;
     width: 100%;
   }
-  
-  .shoping-cart__indicators--total{
+
+  .shoping-cart__indicators--total {
     display: flex;
     align-items: center;
     cursor: default;
@@ -848,16 +846,16 @@ footer {
     justify-content: center;
     gap: 1rem;
   }
-  
-  .shoping-cart__indicators--quantity{
+
+  .shoping-cart__indicators--quantity {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: default;
     border: none;
   }
-  
-  .shoping-cart__indicators--product{
+
+  .shoping-cart__indicators--product {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -867,29 +865,29 @@ footer {
     border-top: 1px solid;
     width: 100%;
   }
-  
-  .shoping-cart__products{
+
+  .shoping-cart__products {
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  
-  .shoping-cart__indicators--close{
+
+  .shoping-cart__indicators--close {
     width: 30px;
     cursor: pointer;
   }
-  
-  .shoping-cart__indicators--arrows{
+
+  .shoping-cart__indicators--arrows {
     width: 25px;
     height: 25px;
     cursor: pointer;
   }
 
-  .shoping-cart__totalPriceContainer{
+  .shoping-cart__totalPriceContainer {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
     cursor: default;
     flex-direction: column;
@@ -897,22 +895,12 @@ footer {
     border-bottom: 1px solid;
     border-top: 1px solid;
   }
-  
-  
-  .table-books{
+
+  .table-books {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  }
-  
-
-}
-
-@media (min-width: 1440px) {
-
-  .welcome-end {
-    padding: 100px;
   }
 }

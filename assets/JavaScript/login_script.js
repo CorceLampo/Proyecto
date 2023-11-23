@@ -1,7 +1,3 @@
-window.onload = function () {
-  $("#onload").fadeOut();
-  $("body").removeClass("hidden");
-};
 
 const loginForm = document.querySelector("#login-form");
 loginForm.addEventListener("submit", (e) => {
