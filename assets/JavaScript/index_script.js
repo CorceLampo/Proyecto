@@ -198,7 +198,7 @@ function displayCart() {
         <div class="shoping-cart__indicators--product">
           <img class="shoping-cart__indicators--close" onclick="removeBook('${
             item.tag
-          }')" src="./assets/box_items/close.svg">
+          }')" src="./assets/Boxitems/close.svg">
           <img class="libro" src="./assets/Images/${item.tag}.jpg">
         </div>
         <div class="shoping-cart__indicators--price">
@@ -209,11 +209,11 @@ function displayCart() {
         <div class="shoping-cart__indicators--quantity">
           <img class="shoping-cart__indicators--arrows" onclick="disminuirCantidad('${
             item.tag
-          }')" src="./assets/box_items/left.svg">
+          }')" src="./assets/Boxitems/left.svg">
           <span>${item.inCart}</span>
           <img class="shoping-cart__indicators--arrows" onclick="aumentarCantidad('${
             item.tag
-          }')" src="./assets/box_items/right.svg">
+          }')" src="./assets/Boxitems/right.svg">
         </div>
         <div class="shoping-cart__indicators--total">
         <p class="shoping-cart__title">Precio total:   </p>
@@ -231,7 +231,7 @@ function displayCart() {
       $${cartCost},00
       </h4>
       <div class="shoping-cart_buyButton" onclick="soon()">
-      <img src="./assets/box_items/cart.svg">Comprar
+      <img src="./assets/Boxitems/cart.svg">Comprar
       </div>
       </div>
      `;
